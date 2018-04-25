@@ -85,9 +85,15 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 1" class="composition__photo composition__photo--p1" src="img/nat-1-large.jpg">
+                        <img srcset="img/nat-2.jpg 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo21" class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 3" class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
+
+
                     </div>
                 </div>
             </div>
@@ -347,7 +353,12 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img class="footer__logo" src="img/logo-green-2x.png" alt="full logo">
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="full logo" src="img/logo-green-2x.png">
+            </picture>
+
+
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -397,8 +408,13 @@
                     Important &mdash; Please read this terms berfore booking
                 </h3>
                 <p class="popup__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloremque pariatur architecto cupiditate ipsa expedita eos praesentium, dolorum minima cumque incidunt ea, nesciunt aliquid sit, molestias illo molestiae? Id, minus.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque, sit dolorem similique tenetur est cum enim iusto qui, tempora iste pariatur eius culpa id et! Quod magnam nesciunt facilis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quia ducimus doloremque minima maxime beatae labore deserunt error consectetur incidunt repudiandae vero officiis commodi, minus perferendis sint alias molestias aliquam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloremque pariatur architecto cupiditate ipsa expedita eos
+                    praesentium, dolorum minima cumque incidunt ea, nesciunt aliquid sit, molestias illo molestiae? Id, minus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque, sit dolorem similique tenetur
+                    est cum enim iusto qui, tempora iste pariatur eius culpa id et! Quod magnam nesciunt facilis? Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. Corporis, quia ducimus doloremque minima maxime beatae labore
+                    deserunt error consectetur incidunt repudiandae vero officiis commodi, minus perferendis sint alias molestias
+                    aliquam!
                 </p>
                 <a href="#" class="btn btn--green">Book now</a>
             </div>
